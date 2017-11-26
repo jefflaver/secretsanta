@@ -18,8 +18,8 @@ var players = []playerInfo{
 	{"Liz", "Steve"},
 	{"Nancy", "Doug"},
 	{"Doug", "Nancy"},
-	{"Greg", "Megan"},
-	{"Megan", "Greg"},
+	{"Greg", "Maegan"},
+	{"Maegan", "Greg"},
 	{"Julie", ""},
 	{"Charlotte", "Gabe"},
 	{"Gabe", "Charlotte"},
@@ -39,7 +39,7 @@ func main() {
 	}
 
 	for k, v := range ssmap {
-		filename := "/tmp/" + k + "_SecretSanta.txt"
+		filename := k + "_SecretSanta.txt"
 		ioutil.WriteFile(filename, []byte(v), 0666)
 	}
 }
